@@ -1,17 +1,157 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>2.3 Anchor tags</title>
+        <title>Personal Project </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Times New Roman, Helvetica, sans-serif;
+                margin: 1;
+            }
+
+            .header {
+                padding: 100px;
+                text-align: center;
+                background: #7a71ad;
+                color: white;
+            }
+
+            /* Increase the font size of the h1 element */
+            .header h1 {
+                font-size: 40px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Column container */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+
+            /* Main column */
+            .main {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+                .row {
+                    flex-direction: column;
+                }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        </style>
     </head>
     <body>
-        
-        <ol>
-        <li> <a href="https://en.wikipedia.org/wiki/Serena_Williams" >Serena Jameka Williams</a>, born September 26, 1981, is an American professional tennis player. </li> 
-        <li>Williams was born in Saginaw, Michigan and is the youngest of five daughters including her sister,<a target="_blank" href="https://en.wikipedia.org/wiki/Venus_Williams" >Venus Williams</a>. </li> 
-            <li>When the children were young, the family moved to <a href="https://en.wikipedia.org/wiki/Compton,_California" >Compton, California</a>, where Williams started playing tennis at the age of four.</li>
-            <li>In addition to being a tennis superstar, Serena is a model, activist, entertainer, philanthropist and author. </li>
-            <li>Williams released her first solo autobiography entitled On the Line, following the 2009 US Open.</li>
-        </ol>
-         
+        <div class="header">
+
+
+            <h1>Amiable
+                <br>
+                Joyous
+                <br>
+                Adventurous
+
+            </h1>
+
+
+
+
+
+        </div>
+
+        <div class="navbar">
+            <a target="_blank" href="https://classroom.google.com/u/0/h">Google Classroom</a>
+            <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+            <a target="_blank" href="https://www.google.com/">Chrome</a>
+            <a target="_blank" href="https://popcode.org/" class="right">Popcode</a>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <h2>About Aja</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>I am a rising Junior in KIPP San Francisco College Prep.</p>
+                <p> In my spare time, I model and play basketball as a center/stretch forward.</p>
+                <h3>More Text</h3>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+            </div>
+            <div class="main">
+                <h2>My Short Story</h2>
+                <h5><em> A Lion's Pride</em> </h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                <br>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Thank You!</h2>
+        </div>
+
     </body>
 </html>
